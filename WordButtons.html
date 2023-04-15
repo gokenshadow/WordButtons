@@ -1,0 +1,342 @@
+ 
+ <style>
+ 	* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  transition: all 0.15s;
+}
+html { 
+  height:100%; 
+}
+body {
+  position: absolute; top:0; bottom:0; right:0; left:0; 
+  background: radial-gradient(circle, #34495e 0%, #333 100%);
+  padding-top: 0px;
+  color:White;
+}
+.container{
+  margin: 0px auto;
+  text-align: center;
+  perspective: 600px;
+}
+button{
+  font-size: 30px;
+  font-weight:bold;
+  font-family: sans-serif;
+  line-height: 17px;
+  padding: .400em .5em;
+  border-radius: 10px 10px 12px 12px;
+  box-shadow:
+    0px 8px 0px 0px #2980b9, /* button thickness */
+    0px 0 20px rgba(255,255,255,.2) inset, /* inner glow */
+    2px 30px 0px rgba(255,255,255,.1) inset, /* sublte reflection */
+    5px 15px 30px -10px #000; /* dark shadow underneath */
+  border: 1px solid #2980b9;
+  cursor: pointer;
+  background: #3498db;
+  color: #ecf0f1;
+  text-shadow: 1px 1px 1px #34495e;
+  transform: rotateX(5deg);
+  margin: 4px 4px;
+  width: 170px;
+  text-align: center;
+}
+button i{
+  padding-right: 17px;
+  transform: scale(1.1) translate(0,-1px);
+}
+button:hover{
+  box-shadow:
+    0px 5px 0px 0px #2980b9, /* button thickness */
+    0px 0 50px rgba(134, 243, 255, 1) inset, /* inner glow */
+    5px 28px 0px rgba(255,255,255,.15) inset, /* sublte reflection */
+    0px 0px 30px rgba(134,243,255,.2), /* outer glow */
+    5px 15px 30px -10px #000; /* dark shadow underneath */
+  color: #fff;
+  filter: saturate(1.5);
+}
+button:hover i{
+  transform: rotate(-12deg) translate(1px, -3px) scale(1.2);
+}
+button:active{
+  box-shadow:
+    0px 2px 0px 0px #2980b9, /* button thickness */
+    0px 0 100px 10px rgba(134, 243, 255, 1) inset, /* inner glow */
+    5px 25px 0px rgba(255,255,255,.1) inset, /* sublte reflection */
+    0px 0px 30px rgba(134,243,255,.5), /* outer glow */
+    5px 15px 30px -10px #000; /* dark shadow underneath */
+  filter: saturate(1.7);
+}
+button:active i{
+  transform: rotate(-22deg) translate(2px, -5px) scale(1.3);
+}
+.red{
+  filter: hue-rotate(155deg);
+}
+.red:hover{
+  filter: hue-rotate(155deg) saturate(1.5);
+}
+.red:active{
+  filter: hue-rotate(155deg) saturate(1.7);
+}
+.green{
+  filter: hue-rotate(255deg) saturate(.8);
+}
+.green:hover{
+  filter: hue-rotate(255deg) saturate(1);
+}
+.green:active{
+  filter: hue-rotate(255deg) saturate(1.2);
+}
+
+.scrollable_div {
+height:15%;
+overflow:auto;
+}
+.scrollable_div10 {
+height:10%;
+overflow:auto;
+}
+h1 {
+font-size:1.2em;
+line-height:1.2em;
+}
+
+.gray {
+background-color:gray;
+}
+
+.redish {
+background-color:red;
+}
+
+.orange {
+background-color:orange;
+}
+
+.yellow {
+background-color:yellow;
+}
+
+.greenish {
+background-color:green;
+}
+
+.blue {
+background-color:blue;
+}
+
+.purple {
+background-color:purple;
+}
+ </style>
+
+<!-- Get words Here: https://ttsmp3.com/ (choose Joey voice) -->
+
+		<h1>Basic words:</h1>
+	<div class="scrollable_div gray" style="height:5%; overflow:auto;">
+		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/Yes.mp3');sound.play();">yes</button>
+		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/No.mp3');sound.play();">no</button>
+		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/The.mp3');sound.play();">the</button>
+		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/A.mp3');sound.play();">a</button>
+		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/An.mp3');sound.play();">an</button>
+		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/There.mp3');sound.play();">there</button>
+		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/Not.mp3');sound.play();">not</button>
+		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/oh.mp3');sound.play();">oh</button>
+		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/And.mp3');sound.play();">and</button>
+	</div>
+		<h1>? Questions:</h1>
+	<div class="scrollable_div redish"	style="height:5%; overflow:auto;">
+		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/Why.mp3');sound.play();">why</button>
+		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/Where.mp3');sound.play();">where</button>
+		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/Who.mp3');sound.play();">who</button>
+		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/What.mp3');sound.play();">what</button>
+		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/How.mp3');sound.play();">how</button>
+	</div>
+	
+	<h1>Names:</h1>
+	<div class="scrollable_div orange" style="height:10%">
+	<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/John.mp3');sound.play();">John</button>
+	<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/George.mp3');sound.play();">George</button>
+	<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/Sally.mp3');sound.play();">Sally</button>
+	<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/Dad.mp3');sound.play();">Dad</button>
+	<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/Mom.mp3');sound.play();">Mom</button>
+	<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/Anne.mp3');sound.play();">Anne</button>
+	<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/Bernadette.mp3');sound.play();">Bernadette</button>
+	<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/Paul.mp3');sound.play();">Paul</button>
+	<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/Aaron.mp3');sound.play();">Aaron</button>
+	<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/Nick.mp3');sound.play();">Nick</button>
+	<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/Chris.mp3');sound.play();">Chris</button>
+	<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/Lily.mp3');sound.play();">Lily</button>
+	<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/Monica.mp3');sound.play();">Monica</button>
+	<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/Joe.mp3');sound.play();">Joe</button>
+	<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/Mary.mp3');sound.play();">Mary</button>
+	<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/Michael.mp3');sound.play();">Michael</button>
+	<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/jane.mp3');sound.play();">Jane</button>
+		
+	
+   
+	</div>
+	<h1>Pronouns:</h1>
+	<div class="scrollable_div orange" style="height:10%">
+		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/I.mp3');sound.play();">I</button>
+		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/Im.mp3');sound.play();">I'm</button>
+		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/Me.mp3');sound.play();">me</button>
+		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/my.mp3');sound.play();">my</button>
+		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/You.mp3');sound.play();">you</button>
+		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/Youre.mp3');sound.play();">you're</button> 
+		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/He.mp3');sound.play();">he</button>
+		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/Hes.mp3');sound.play();">he's</button>
+		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/Him.mp3');sound.play();">him</button>
+		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/She.mp3');sound.play();">she</button>
+		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/Shes.mp3');sound.play();">she's</button>
+		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/Her.mp3');sound.play();">her</button>
+		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/They.mp3');sound.play();">they</button>
+		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/Theyre.mp3');sound.play();">they're</button>
+		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/We.mp3');sound.play();">we</button>
+		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/Weare.mp3');sound.play();">we're</button>
+		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/Us.mp3');sound.play();">us</button>
+		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/it.mp3');sound.play();">it</button>
+		
+	</div>
+
+	<h1>Verbs:</h1>
+	<div class="scrollable_div yellow" style="height:10%;">
+		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/Am.mp3');sound.play();">am</button>
+		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/Is.mp3');sound.play();">is</button>
+		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/Are.mp3');sound.play();">are</button>
+		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/Be.mp3');sound.play();">be</button>
+		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/Was.mp3');sound.play();">was</button>
+		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/Were.mp3');sound.play();">were</button>
+		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/Want.mp3');sound.play();">want</button>
+		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/Eat.mp3');sound.play();">eat</button>
+    	<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/Go.mp3');sound.play();">go</button>
+    	<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/Going.mp3');sound.play();">going</button>
+		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/play.mp3');sound.play();">play</button>
+		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/make.mp3');sound.play();">make</button>
+		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/want.mp3');sound.play();">want</button>
+		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/wash.mp3');sound.play();">wash</button>
+		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/find.mp3');sound.play();">find</button>
+		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/work.mp3');sound.play();">work</button>
+		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/run.mp3');sound.play();">run</button>
+		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/look.mp3');sound.play();">look</button>
+		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/see.mp3');sound.play();">see</button>
+		
+	
+   
+	</div>
+	
+	<h1>Prepositions:</h1>
+	<div class="scrollable_div greenish" style="height:7%; overflow:auto;">
+	<br>
+		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/To.mp3');sound.play();">to</button>
+		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/up.mp3');sound.play();">up</button>
+		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/down.mp3');sound.play();">down</button>
+		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/in.mp3');sound.play();">in</button>
+		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/Right.mp3');sound.play();">right</button>
+    	<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/Left.mp3');sound.play();">left</button>
+	</div>
+	
+	<h1>Adjectives:</h1> 
+	<div class="scrollable_div purple" style="height:12%">
+		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/white.mp3');sound.play();">white</button>
+		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/black.mp3');sound.play();">black</button>
+		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/Red.mp3');sound.play();">red</button>
+	    <button class="button" href="javascript:null" onclick="var sound = new Audio('audio/Orange.mp3');sound.play();">orange</button>
+	    <button class="button" href="javascript:null" onclick="var sound = new Audio('audio/Yellow.mp3');sound.play();">yellow</button>
+	    <button class="button" href="javascript:null" onclick="var sound = new Audio('audio/Green.mp3');sound.play();">green</button>
+	    <button class="button" href="javascript:null" onclick="var sound = new Audio('audio/Blue.mp3');sound.play();">blue</button>
+	    <button class="button" href="javascript:null" onclick="var sound = new Audio('audio/Purple.mp3');sound.play();">purple</button>
+		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/pink.mp3');sound.play();">pink</button>
+		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/funny.mp3');sound.play();">funny</button>
+	</div>
+	
+	<h1>Nouns:</h1> 
+	<div class="scrollable_div blue" style="height:20%">
+	    <button class="button" href="javascript:null" onclick="var sound = new Audio('audio/Movie.mp3');sound.play();">movie</button>
+	    <button class="button" href="javascript:null" onclick="var sound = new Audio('audio/Book.mp3');sound.play();">book</button>
+	    <button class="button" href="javascript:null" onclick="var sound = new Audio('audio/Car.mp3');sound.play();">car</button>
+	    <button class="button" href="javascript:null" onclick="var sound = new Audio('audio/Church.mp3');sound.play();">church</button>
+	    <button class="button" href="javascript:null" onclick="var sound = new Audio('audio/Library.mp3');sound.play();">library</button>
+	    <button class="button" href="javascript:null" onclick="var sound = new Audio('audio/Food.mp3');sound.play();">food</button>
+	    <button class="button" href="javascript:null" onclick="var sound = new Audio('audio/Banana.mp3');sound.play();">banana</button>
+		
+		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/bus.mp3');sound.play();">bus</button>
+		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/girl.mp3');sound.play();">girl</button>
+		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/plate.mp3');sound.play();">plate</button>
+		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/beef.mp3');sound.play();">beef</button>
+		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/potato.mp3');sound.play();">potato</button>
+		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/avocado.mp3');sound.play();">avocado</button>
+		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/jet.mp3');sound.play();">jet</button>
+		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/work.mp3');sound.play();">work</button>
+		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/butter.mp3');sound.play();">butter</button>
+		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/nuts.mp3');sound.play();">nuts</button>
+		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/classroom.mp3');sound.play();">classroom</button>
+		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/cookie.mp3');sound.play();">cookie</button>
+		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/cake.mp3');sound.play();">cake</button>
+		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/salt.mp3');sound.play();">salt</button>
+		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/pencil.mp3');sound.play();">pencil</button>
+		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/cucumber.mp3');sound.play();">cucumber</button>
+		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/mouse.mp3');sound.play();">mouse</button>
+		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/car.mp3');sound.play();">car</button>
+		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/father.mp3');sound.play();">father</button>
+		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/leaf.mp3');sound.play();">leaf</button>
+		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/salad.mp3');sound.play();">salad</button>
+		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/pear.mp3');sound.play();">pear</button>
+		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/net.mp3');sound.play();">net</button>
+		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/can.mp3');sound.play();">can</button>
+		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/mother.mp3');sound.play();">mother</button>
+		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/star.mp3');sound.play();">star</button>
+		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/house.mp3');sound.play();">house</button>
+		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/jelly.mp3');sound.play();">jelly</button>
+		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/dish.mp3');sound.play();">dish</button>
+		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/goat.mp3');sound.play();">goat</button>
+		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/book.mp3');sound.play();">book</button>
+		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/moon.mp3');sound.play();">moon</button>
+		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/school.mp3');sound.play();">school</button>
+		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/table.mp3');sound.play();">table</button>
+		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/chicken.mp3');sound.play();">chicken</button>
+		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/cup.mp3');sound.play();">cup</button>
+		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/hot dog.mp3');sound.play();">hot dog</button>
+		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/tree.mp3');sound.play();">tree</button>
+		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/notebook.mp3');sound.play();">notebook</button>
+		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/juice.mp3');sound.play();">juice</button>
+		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/oil.mp3');sound.play();">oil</button>
+		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/rake.mp3');sound.play();">rake</button>
+		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/egg.mp3');sound.play();">egg</button>
+		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/eraser.mp3');sound.play();">eraser</button>
+		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/hen.mp3');sound.play();">hen</button>
+		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/wagon.mp3');sound.play();">wagon</button>
+		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/lamp.mp3');sound.play();">lamp</button>
+		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/ball.mp3');sound.play();">ball</button>
+		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/pen.mp3');sound.play();">pen</button>
+		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/horse.mp3');sound.play();">horse</button>
+		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/pupil.mp3');sound.play();">pupil</button>
+		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/king.mp3');sound.play();">king</button>
+		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/cat.mp3');sound.play();">cat</button>
+		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/cow.mp3');sound.play();">cow</button>
+		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/fox.mp3');sound.play();">fox</button>
+		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/oatmeal.mp3');sound.play();">oatmeal</button>
+		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/sun.mp3');sound.play();">sun</button>
+		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/fish.mp3');sound.play();">fish</button>
+		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/vase.mp3');sound.play();">vase</button>
+		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/tomato.mp3');sound.play();">tomato</button>
+		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/hat.mp3');sound.play();">hat</button>
+		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/fork.mp3');sound.play();">fork</button>
+		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/teacher.mp3');sound.play();">teacher</button>
+		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/rabbit.mp3');sound.play();">rabbit</button>
+		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/frog.mp3');sound.play();">frog</button>
+		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/boat.mp3');sound.play();">boat</button>
+		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/bear.mp3');sound.play();">bear</button>
+		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/meat.mp3');sound.play();">meat</button>
+		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/napkin.mp3');sound.play();">napkin</button>
+		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/spot.mp3');sound.play();">spot</button>
+		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/nest.mp3');sound.play();">nest</button>
+		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/Puff.mp3');sound.play();">Puff</button>
+		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/tent.mp3');sound.play();">tent</button>
+		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/spoon.mp3');sound.play();">spoon</button>
+	</div>
+	
+	<div>
