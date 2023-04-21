@@ -1,0 +1,48 @@
+    <button onclick="SortData()">
+        Sort
+    </button>
+  
+    <script>
+        function comparator(a, b) {
+            if (a.innerHTML < b.innerHTML)
+                return -1;
+            if (a.innerHTML > b.innerHTML)
+                return 1;
+            return 0;
+        }
+          
+        // Function to sort Data
+        function SortData() {
+            var subjects =
+                document.querySelectorAll("button");
+            var subjectsArray = Array.from(subjects);
+            let sorted = subjectsArray.sort(comparator);
+            sorted.forEach(e =>
+                document.querySelector("#testdiv").
+                    appendChild(e));
+        }
+    </script>
+	
+
+	<div id="testdiv" class="scrollable_div gray" style="height:5%; overflow:auto;">
+		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/Aaron.mp3');sound.play();">Aaron</button>
+	<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/Anne.mp3');sound.play();">Anna</button>
+	<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/Anne.mp3');sound.play();">Anne</button>
+	<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/Bernadette.mp3');sound.play();">Bernadette</button>
+	<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/Chris.mp3');sound.play();">Chris</button>
+	<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/Dad.mp3');sound.play();">Dad</button>
+	<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/George.mp3');sound.play();">George</button>
+	<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/Anne.mp3');sound.play();">Hannah</button>
+	<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/jane.mp3');sound.play();">Jane</button>
+	<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/Joe.mp3');sound.play();">Joe</button>
+	<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/John.mp3');sound.play();">John</button>
+	<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/Anne.mp3');sound.play();">Lauren</button>
+	<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/Lily.mp3');sound.play();">Lily</button>
+	<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/Mary.mp3');sound.play();">Mary</button>
+	<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/Michael.mp3');sound.play();">Michael</button>
+	<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/Mom.mp3');sound.play();">Mom</button>
+	<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/Monica.mp3');sound.play();">Monica</button>
+	<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/Nick.mp3');sound.play();">Nick</button>
+	<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/Paul.mp3');sound.play();">Paul</button>
+	<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/Sally.mp3');sound.play();">Sally</button>
+	</div>
