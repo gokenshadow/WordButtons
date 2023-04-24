@@ -22,10 +22,10 @@ body {
   perspective: 600px;
 }
 button{
-  font-size: 30px;
+  font-size: 23px;
   font-weight:bold;
   font-family: sans-serif;
-  line-height: 17px;
+  line-height: 15px;
   padding: .400em .5em;
   border-radius: 10px 10px 12px 12px;
   box-shadow:
@@ -40,7 +40,7 @@ button{
   text-shadow: 1px 1px 1px #34495e;
   transform: rotateX(5deg);
   margin: 4px 4px;
-  width: 170px;
+  width: 140px;
   text-align: center;
 }
 button i{
@@ -92,8 +92,6 @@ button:active i{
 }
 
 .scrollable_div {
-height:15%;
-overflow:auto;
 }
 .scrollable_div10 {
 height:10%;
@@ -140,21 +138,25 @@ background-color:purple;
 <!-- Get words Here: https://ttsmp3.com/ (choose Joey voice) -->
 
 		<h1>Basic words:</h1>
-	<div id="testdiv" class="scrollable_div gray" style="height:5%; overflow:auto;">
+	<div id="testdiv" class="scrollable_div gray">
 		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/A.mp3');sound.play();">a</button>
 		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/An.mp3');sound.play();">an</button>
 		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/And.mp3');sound.play();">and</button>
 		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/because.mp3');sound.play();">because</button>
+		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/down.mp3');sound.play();">down</button>
 		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/here.mp3');sound.play();">here</button>
+		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/Left.mp3');sound.play();">left</button>
 		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/No.mp3');sound.play();">no</button>
 		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/Not.mp3');sound.play();">not</button>
+		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/oh.mp3');sound.play();">oh</button>
+		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/Right.mp3');sound.play();">right</button>
 		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/The.mp3');sound.play();">the</button>
 		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/There.mp3');sound.play();">there</button>
-		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/oh.mp3');sound.play();">oh</button>
+		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/up.mp3');sound.play();">up</button>
 		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/Yes.mp3');sound.play();">yes</button>
 	</div>
 		<h1>? Questions:</h1>
-	<div class="scrollable_div redish"	style="height:5%; overflow:auto;">
+	<div class="scrollable_div redish">
 		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/How.mp3');sound.play();">how</button>
 		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/What.mp3');sound.play();">what</button>
 		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/Where.mp3');sound.play();">where</button>
@@ -163,7 +165,7 @@ background-color:purple;
 	</div>
 	
 	<h1>Names:</h1>
-	<div class="scrollable_div orange" style="height:10%">
+	<div class="scrollable_div orange">
 		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/Aaron.mp3');sound.play();">Aaron</button>
 		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/anna.mp3');sound.play();">Anna</button>
 		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/Anne.mp3');sound.play();">Anne</button>
@@ -190,12 +192,13 @@ background-color:purple;
    
 	</div>
 	<h1>Pronouns:</h1>
-	<div class="scrollable_div light-orange" style="height:10%">
+	<div class="scrollable_div light-orange">
 		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/I.mp3');sound.play();">I</button>
 		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/Im.mp3');sound.play();">I'm</button>
 		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/Me.mp3');sound.play();">me</button>
 		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/my.mp3');sound.play();">my</button>
 		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/You.mp3');sound.play();">you</button>
+		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/Youre.mp3');sound.play();">your</button> 
 		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/Youre.mp3');sound.play();">you're</button> 
 		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/He.mp3');sound.play();">he</button>
 		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/Hes.mp3');sound.play();">he's</button>
@@ -204,8 +207,11 @@ background-color:purple;
 		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/Shes.mp3');sound.play();">she's</button>
 		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/Her.mp3');sound.play();">her</button>
 		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/it.mp3');sound.play();">it</button>
+		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/its.mp3');sound.play();">its</button>
+		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/its.mp3');sound.play();">it's</button>
 		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/They.mp3');sound.play();">they</button>
 		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/Theyre.mp3');sound.play();">they're</button>
+		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/Them.mp3');sound.play();">them</button>
 		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/We.mp3');sound.play();">we</button>
 		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/Weare.mp3');sound.play();">we're</button>
 		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/Us.mp3');sound.play();">us</button>
@@ -213,7 +219,7 @@ background-color:purple;
 	</div>
 
 	<h1>Verbs:</h1>
-	<div class="scrollable_div yellow" style="height:10%;">
+	<div class="scrollable_div yellow">
 		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/Am.mp3');sound.play();">am</button>
 		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/Are.mp3');sound.play();">are</button>
 		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/Be.mp3');sound.play();">be</button>
@@ -247,18 +253,15 @@ background-color:purple;
 	</div>
 	
 	<h1>Prepositions:</h1>
-	<div class="scrollable_div greenish" style="height:7%; overflow:auto;">
+	<div class="scrollable_div greenish">
 		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/at.mp3');sound.play();">at</button>
-		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/down.mp3');sound.play();">down</button>
 		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/in.mp3');sound.play();">in</button>
-		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/Left.mp3');sound.play();">left</button>
-		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/Right.mp3');sound.play();">right</button>
 		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/To.mp3');sound.play();">to</button>
-		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/up.mp3');sound.play();">up</button>
+
 	</div>
 	
 	<h1>Adjectives:</h1> 
-	<div class="scrollable_div purple" style="height:12%">
+	<div class="scrollable_div purple">
 		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/black.mp3');sound.play();">black</button>
 		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/Blue.mp3');sound.play();">blue</button>
 		<button class="button" href="javascript:null" onclick="var sound = new Audio('audio/fine.mp3');sound.play();">fine</button>
@@ -280,7 +283,7 @@ background-color:purple;
 	</div>
 	
 	<h1>Nouns:</h1> 
-	<div class="scrollable_div blue" style="height:20%">
+	<div class="scrollable_div blue">
   <button class="button" href="javascript:null" onclick="var sound = new Audio('audio/arm.mp3');sound.play();">arm</button>
   <button class="button" href="javascript:null" onclick="var sound = new Audio('audio/avocado.mp3');sound.play();">avocado</button>
   <button class="button" href="javascript:null" onclick="var sound = new Audio('audio/ball.mp3');sound.play();">ball</button>
